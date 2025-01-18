@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
     case 'MIT':
       return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
     case 'Apache 2.0':
-      return '![License: Apache 2.0] (https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
+      return '![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
     case 'GPL 3.0':
             return '![License: GPL 3.0](https://img.shields.io/badge/License-GPL%20v3-blue.svg)';
     case 'BSD 3':
@@ -36,7 +36,12 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-  return `## License\n${renderLicenseBadge(license)}\n${renderLicenseLink(license)}\n`;
+  return `## License
+  This project is licensed under the ${license} license.
+
+  ${renderLicenseBadge(license)}
+
+  For more details, see the ${renderLicenseLink(license)}.`;
  }
  return '';
 }
@@ -54,7 +59,8 @@ ${data.description}
 - [License](#license) 
 - [Contributing](#contributing) 
 - [Tests](#tests) 
-- [Questions](#questions)
+- [Questions](#Questions)
+
 
 ## Installation
 ${data.installation}
@@ -62,8 +68,8 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## License
-${renderLicenseSection(data.license)}
+
+${renderLicenseSection(data.license)} 
 
 ## Contributing
 ${data.contributing}
@@ -80,19 +86,5 @@ GitHub: [${data.github}](https://github.com/${data.github})
 
 export default generateMarkdown;
 
-// // Usage of the function (only for testing, ensure `data` is defined before running this part in your actual workflow) 
-// // // Uncomment the following lines only for testing purposes 
-// const data = { 
-// title: 'Project Title', 
-// description: 'Project Description', 
-// installation: 'Installation Instructions', 
-// usage: 'Usage Information', 
-// license: 'MIT', 
-// contributing: 'Contribution Guidelines', 
-// tests: 'Test Instructions', 
-// github: 'GitHubUsername', 
-// email: 'email@example.com' 
-// }; 
-// const markdownContent = generateMarkdown(data); 
-// console.log(markdownContent); // This will log the generated Markdown to the console
+
 
