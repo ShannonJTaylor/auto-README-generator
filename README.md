@@ -3,6 +3,9 @@
 ## Description
 Generate a high quality README.md file for your project.
 
+## Walk-Through Video
+Check out the walk-through video for the app: https://app.screencastify.com/v3/watch/PAfbsfDAKZFPuJ32Efkn
+
 ## Table of Contents 
 - [Installation](#installation) 
 - [Usage](#usage) 
