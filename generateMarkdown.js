@@ -36,7 +36,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-  return `${renderLicenseBadge(license)}\n${renderLicenseLink(license)}\n`;
+  return `## License\n${renderLicenseBadge(license)}\n${renderLicenseLink(license)}\n`;
  }
  return '';
 }
@@ -45,7 +45,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-    ## Description
+## Description
 ${data.description}
 
 ## Table of Contents 
@@ -78,13 +78,21 @@ GitHub: [${data.github}](https://github.com/${data.github})
 `;
 }
 
-// exporting the function
 export default generateMarkdown;
 
-// usage of the function
-const markdownContent = generateMarkdown(data);
-console.log(markdownContent); // This will log the generated Markdown to the console
+// // Usage of the function (only for testing, ensure `data` is defined before running this part in your actual workflow) 
+// // // Uncomment the following lines only for testing purposes 
+// const data = { 
+// title: 'Project Title', 
+// description: 'Project Description', 
+// installation: 'Installation Instructions', 
+// usage: 'Usage Information', 
+// license: 'MIT', 
+// contributing: 'Contribution Guidelines', 
+// tests: 'Test Instructions', 
+// github: 'GitHubUsername', 
+// email: 'email@example.com' 
+// }; 
+// const markdownContent = generateMarkdown(data); 
+// console.log(markdownContent); // This will log the generated Markdown to the console
 
-
-
-module.exports = generateMarkdown;
