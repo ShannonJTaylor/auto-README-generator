@@ -1,5 +1,5 @@
 {
-  "name": "static-site",
+  "name": "auto-readme-generator",
   "version": "1.0.0",
   "description": "You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.",
   "main": "index.js",
@@ -7,9 +7,30 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ShannonJTaylor",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShannonJTaylor/auto-README-generator.git"
+  },
+  "keywords": [
+    "README",
+    "generator",
+    "automation",
+    "CLI",
+    "command-line",
+    "inquirer",
+    "node.js",
+    "JavaScript",
+    "documentation",
+    "auto-generate"
+  ],
+  "bugs": {
+    "url": "https://github.com/ShannonJTaylor/auto-README-generator/issues"
+  },
+  "homepage": "https://github.com/ShannonJTaylor/auto-README-generator#readme"
 }
