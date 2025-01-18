@@ -1,7 +1,7 @@
-# Auto-READEME-generator
+# auto-README-generator
 
 ## Description
-Generate a high quality README.md file
+Generate a high quality README.md file for your project.
 
 ## Table of Contents 
 - [Installation](#installation) 
@@ -13,10 +13,10 @@ Generate a high quality README.md file
 
 
 ## Installation
-| 1. Clone the repository: ```bash git clone https://github.com/your-username/your-project.git cd your-project ```| 2. Install dependencies: ```bash npm install ``` | 3. Install the inquirer package: ```bash npm install inquirer ``
+| 1. Clone the repository: ```bash git clone https://github.com/your-username/your-project.git cd your-project ```| 2. Install dependencies: ```bash npm install ``` | 3. Install the inquirer package: ```bash npm install inquirer ``` 
 
 ## Usage
-
+| 1. **Run the application**: ```bash node index.js ``` | 2. **Follow the on-screen prompts**: - Example: When prompted, enter your project details and press Enter.
 
 
 ## License
@@ -33,6 +33,6 @@ Generate a high quality README.md file
 ```bash npm test```
 
 ## Questions
-If you have any questions, please contact me at [shannon@yahoo.com](mailto:shannon@yahoo.com).
+If you have any questions, please contact me at [shannonjo8475@gmail.com](mailto:shannonjo8475@gmail.com).
 GitHub: [ShannonJTaylor](https://github.com/ShannonJTaylor)
 
